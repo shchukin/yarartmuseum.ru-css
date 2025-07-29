@@ -35,3 +35,25 @@
     .location--purple-mark::after {
         background-color: #C443B9;
     }
+
+
+
+@media (max-width: 1199px) {
+
+    .location {
+
+    }
+        .location__name {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        .location__address {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        .location::after {
+            left: -20px;
+        }
+}

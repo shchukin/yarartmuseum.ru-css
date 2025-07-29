@@ -10,6 +10,7 @@
         .event-card__image {
             vertical-align: top;
             width: 100%;
+            height: auto;
             aspect-ratio: 4/3;
             background-color: var(--image-fallback);
             transition: filter var(--transition-hover);
@@ -21,7 +22,7 @@
 
     .event-card__tag {
         position: absolute;
-        left: 11px;
+        left: 12px;
         top: 12px;
         padding: 6px 12px;
         background-color: #FFFFFF;
@@ -72,17 +73,84 @@
             padding-top: 16px;
             display: flex;
             align-items: center;
-            gap: 27px;
+            gap: 16px;
         }
             .event-card__location {
 
             }
 
             .event-card__action {
-
+                margin-left: auto;
             }
                 .event-card__action .btn {
                     font-weight: normal;
                     border-radius: 2px;
                     letter-spacing: -0.5px;
                 }
+
+
+@media (max-width: 1199px) {
+
+    .event-card {
+
+    }
+        .event-card__preview {
+
+        }
+            .event-card__image {
+
+            }
+
+            .event-card__preview:hover .event-card__image {
+
+            }
+
+        .event-card__tag {
+            padding: 4px 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .event-card__body {
+            padding: 18px 20px;
+        }
+            .event-card__dates {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .event-card__heading {
+                font-size: 20px;
+                line-height: 24px;
+            }
+                .event-card__link {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+
+                .event-card__link:hover {
+
+                }
+
+            .event-card__description {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .event-card__footer {
+                padding-top: 12px;
+            }
+                .event-card__location {
+
+                }
+
+                .event-card__action {
+
+                }
+                    .event-card__action .btn {
+                        /*font-weight: normal;*/
+                        /*border-radius: 2px;*/
+                        /*letter-spacing: -0.5px;*/
+                    }
+}
+
