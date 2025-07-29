@@ -1,6 +1,9 @@
 :root {
+    --font: "Montserrat", sans-serif;
+    --font-heading: "Prata", serif;
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
     --image-fallback: #F3F5F4;
     --link-hover: #E42313;
+    --shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }

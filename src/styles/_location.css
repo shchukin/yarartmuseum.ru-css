@@ -1,0 +1,37 @@
+.location {
+    position: relative;
+}
+    .location__name {
+        font-size: 12px;
+        line-height: 14px;
+        color: #999999;
+    }
+
+    .location__address {
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #999999;
+    }
+
+    .location::after {
+        content: "";
+        position: absolute;
+        left: -24px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+    }
+
+
+    .location--red-mark::after {
+        background-color: #FF4D37;
+    }
+
+    .location--green-mark::after {
+        background-color: #4ED953;
+    }
+
+    .location--purple-mark::after {
+        background-color: #C443B9;
+    }

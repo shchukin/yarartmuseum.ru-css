@@ -5,4 +5,9 @@
         vertical-align: top;
         width: 100%;
         height: auto;
+        transition: filter var(--transition-hover);
+    }
+
+    .gallery-preview:hover .gallery-preview__image {
+        filter: brightness(105%) contrast(105%);
     }

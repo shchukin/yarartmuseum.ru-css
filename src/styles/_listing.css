@@ -1,0 +1,32 @@
+.listing {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+    .listing__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: "Prata", serif;
+        font-weight: normal;
+        font-size: 52px;
+        line-height: 62px;
+        text-align: center;
+    }
+
+    .listing__filters {
+        margin-top: 40px;
+        height: 100px;
+        background-color: purple;
+    }
+
+    .listing__body {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 40px 21px;
+    }
+
+    .listing__more {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
