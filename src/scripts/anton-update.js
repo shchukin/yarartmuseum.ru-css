@@ -10,7 +10,7 @@
                 spaceBetween: 24,
                 pagination: {
                     el: element.querySelector('.swiper-pagination'),
-                    type: 'fraction',
+                    clickable: true
                 },
                 navigation: {
                     nextEl: element.querySelector('.swiper-button-next'),

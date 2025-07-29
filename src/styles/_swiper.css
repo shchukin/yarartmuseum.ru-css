@@ -15,6 +15,7 @@
         }
 
     .swiper--css-default-skin .swiper-controls {
+        margin-top: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -25,55 +26,80 @@
             min-width: 50px;
             display: flex;
             justify-content: center;
-            gap: 3px;
+            gap: 0;
+            /* In case of pagination type fraction */
             font-weight: 600;
             font-size: 20px;
             line-height: 24px;
             color: #000000;
             text-align: center;
         }
-            .swiper--css-default-skin .swiper-pagination-current {
-
+            .swiper--css-default-skin .swiper-pagination-bullet {
+                flex-shrink: 0;
+                position: relative;
+                width: 44px;
+                height: 44px;
+                margin: 0 !important;
+                border-radius: 4px;
+                cursor: pointer;
+                opacity: 100%;
+                background-color: transparent;
             }
 
-            .swiper--css-default-skin .swiper-pagination-total {
-                color: #B3E0E6;
+            .swiper--css-default-skin .swiper-pagination-bullet:hover {
+                background-color: #F7F7F7;
             }
+
+                .swiper--css-default-skin .swiper-pagination-bullet::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #C2C2C2;
+                    border-radius: 0;
+                    margin: auto;
+                }
+
+            .swiper--css-default-skin .swiper-pagination-bullet-active {
+                background-color: transparent !important; /* no hover */
+                cursor: default;
+            }
+                .swiper--css-default-skin .swiper-pagination-bullet-active::before {
+                    background-color: #2D2D2D;
+                }
+
 
         .swiper--css-default-skin .swiper-button {
             position: relative;
             inset: auto;
             margin: 0;
-            width: 60px;
-            height: 60px;
+            width: 44px;
+            height: 44px;
+            border-radius: 4px;
+        }
+
+        .swiper--css-default-skin .swiper-button:hover {
+            background-color: #F7F7F7;
         }
 
         .swiper--css-default-skin .swiper-button-disable {
-            opacity: 70%;
+            opacity: 50%;
         }
-            /* background */
-            .swiper--css-default-skin .swiper-button::before {
-                content: "";
+            /* arrow */
+            .swiper--css-default-skin .swiper-arrow {
                 position: absolute;
                 inset: 0;
                 margin: auto;
-                width: 28px;
-                height: 28px;
-                background-color: #F3F3F3;
-                border-radius: var(--border-radius);
-            }
-
-            /* arrow */
-            .swiper--css-default-skin .swiper-arrow {
-                position: relative;
-                width: 7px;
-                height: 12px;
-                stroke: #222222;
+                width: 18px;
+                height: 16px;
+                fill: #C2C2C2;
             }
 
             /* arrow */
             .swiper--css-default-skin .swiper-button:hover .swiper-arrow {
-                stroke: var(--theme-base-color);
+                fill: #2D2D2D;
             }
 
             /* vendors style */
