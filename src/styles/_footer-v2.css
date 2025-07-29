@@ -1,0 +1,26 @@
+.footer-v2 {
+
+}
+    .footer-v2__wrap {
+
+    }
+        .footer__primary-section {
+
+        }
+
+        .footer__gallery {
+
+        }
+
+        .footer-v2__legalities {
+            padding-top: 39px;
+            padding-bottom: 39px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+            .footer-v2__item {
+                font-size: 13px;
+                line-height: 16px;
+                color: #6D6D6D;
+            }
