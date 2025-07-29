@@ -15,7 +15,7 @@
         }
 
     .swiper--css-default-skin .swiper-controls {
-        margin-top: 12px;
+        margin-top: 6px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,13 +37,14 @@
             .swiper--css-default-skin .swiper-pagination-bullet {
                 flex-shrink: 0;
                 position: relative;
-                width: 44px;
-                height: 44px;
+                width: 42px;
+                height: 42px;
                 margin: 0 !important;
                 border-radius: 4px;
                 cursor: pointer;
                 opacity: 100%;
                 background-color: transparent;
+                transition: background-color var(--transition-hover);
             }
 
             .swiper--css-default-skin .swiper-pagination-bullet:hover {
@@ -75,9 +76,10 @@
             position: relative;
             inset: auto;
             margin: 0;
-            width: 44px;
-            height: 44px;
+            width: 42px;
+            height: 42px;
             border-radius: 4px;
+            transition: background-color var(--transition-hover);
         }
 
         .swiper--css-default-skin .swiper-button:hover {
@@ -95,6 +97,7 @@
                 width: 26px;
                 height: 16px;
                 fill: #C2C2C2;
+                transition: fill var(--transition-hover);
             }
 
             /* arrow */

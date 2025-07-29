@@ -36,12 +36,14 @@
                 }
 
         .footer__gallery {
-
+            max-width: 734px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .footer-v2__legalities {
-            padding-top: 39px;
-            padding-bottom: 39px;
+            padding-top: 26px;
+            padding-bottom: 34px;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
