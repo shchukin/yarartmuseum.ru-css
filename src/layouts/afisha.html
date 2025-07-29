@@ -12,6 +12,13 @@
 		<link href="../legacy/template_05db781fb7f902a07c4a2c9c4c59699a_v1.css" type="text/css" data-template-style="true" rel="stylesheet">
 		<link href="../legacy/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="../legacy/intickets.min.css">
+		<script src="../legacy/jquery-1.12.4.min.js"></script>
+
+		<!-- Anton's vendors -->
+		<link rel="stylesheet" href="../vendors/swiper/swiper-bundle.min.css">
+		<script src="../vendors/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Anton's update -->
 		<link href="../styles/anton-update.css" rel="stylesheet" type="text/css">
 		<script src="../scripts/anton-update.js"></script>
 
@@ -103,9 +110,85 @@
 		<footer class="footer-v2">
 			<div class="footer-v2__wrap container">
 				<div class="footer__primary-section">
-
+					<div class="footer-v2__branding">
+						<a class="logo" href="https://yarartmuseum.ru/">
+							<img src="../legacy/logo.svg" alt="logo">
+						</a>
+					</div>
+					<nav class="footer-v2__navigation">
+						<a class="footer-v2__link" href="#">Главная</a>
+						<a class="footer-v2__link" href="#">О музее</a>
+						<a class="footer-v2__link" href="#">Выставки и события</a>
+						<a class="footer-v2__link" href="#">Цены</a>
+						<a class="footer-v2__link" href="#">Контакты</a>
+						<a class="footer-v2__link" href="#">Пушкинская карта</a>
+					</nav>
 				</div>
 				<div class="footer__gallery">
+
+					<div class="swiper  swiper--js-init-feedback  swiper--css-default-skin">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a class="gallery-preview" href="#">
+									<img class="gallery-preview__image"
+										 srcset="../temp/footer-gallery/footer-gallery-a@2x.jpg 1.5x"
+										 src="../temp/footer-gallery/footer-gallery-a@1x.jpg"
+										 width="734"
+										 height="245"
+										 alt=""
+									>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="gallery-preview" href="#">
+									<img class="gallery-preview__image"
+										 srcset="../temp/footer-gallery/footer-gallery-b@2x.jpg 1.5x"
+										 src="../temp/footer-gallery/footer-gallery-b@1x.jpg"
+										 width="734"
+										 height="245"
+										 alt=""
+									>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="gallery-preview" href="#">
+									<img class="gallery-preview__image"
+										 srcset="../temp/footer-gallery/footer-gallery-c@2x.jpg 1.5x"
+										 src="../temp/footer-gallery/footer-gallery-c@1x.jpg"
+										 width="734"
+										 height="245"
+										 alt=""
+									>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="gallery-preview" href="#">
+									<img class="gallery-preview__image"
+										 srcset="../temp/footer-gallery/footer-gallery-d@2x.jpg 1.5x"
+										 src="../temp/footer-gallery/footer-gallery-d@1x.jpg"
+										 width="734"
+										 height="245"
+										 alt=""
+									>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-controls">
+							<div class="swiper-button swiper-button-prev">
+								<svg class="swiper-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12" fill="none" id="left-7-12">
+									<path d="M6 1L1 6L6 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="swiper-pagination">
+
+							</div>
+							<div class="swiper-button swiper-button-next">
+								<svg class="swiper-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12" fill="none" id="right-7-12">
+									<path d="M1 1L6 6L1 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+					</div>
 
 				</div>
 				<div class="footer-v2__legalities">

@@ -5,8 +5,35 @@
 
     }
         .footer__primary-section {
-
+            display: flex;
+            align-items: center;
+            gap: 190px;
         }
+            .footer-v2__branding {
+                flex-shrink: 0;
+            }
+
+            .footer-v2__navigation {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: -8px;
+                margin-right: -8px;
+            }
+                .footer-v2__link {
+                    padding: 11px 8px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #212529;
+                }
+
+                .footer-v2__link:hover {
+                    color: var(--link-hover);
+                }
 
         .footer__gallery {
 

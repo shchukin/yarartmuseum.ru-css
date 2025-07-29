@@ -1,0 +1,153 @@
+.swiper-button-disabled {
+    pointer-events: none !important;
+}
+
+
+
+.swiper--css-default-skin {
+
+}
+    .swiper--css-default-skin .swiper-wrapper {
+
+    }
+        .swiper--css-default-skin .swiper-slide {
+
+        }
+
+    .swiper--css-default-skin .swiper-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .swiper--css-default-skin .swiper-pagination {
+            position: static;
+            width: auto;
+            min-width: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 3px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+            text-align: center;
+        }
+            .swiper--css-default-skin .swiper-pagination-current {
+
+            }
+
+            .swiper--css-default-skin .swiper-pagination-total {
+                color: #B3E0E6;
+            }
+
+        .swiper--css-default-skin .swiper-button {
+            position: relative;
+            inset: auto;
+            margin: 0;
+            width: 60px;
+            height: 60px;
+        }
+
+        .swiper--css-default-skin .swiper-button-disable {
+            opacity: 70%;
+        }
+            /* background */
+            .swiper--css-default-skin .swiper-button::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                width: 28px;
+                height: 28px;
+                background-color: #F3F3F3;
+                border-radius: var(--border-radius);
+            }
+
+            /* arrow */
+            .swiper--css-default-skin .swiper-arrow {
+                position: relative;
+                width: 7px;
+                height: 12px;
+                stroke: #222222;
+            }
+
+            /* arrow */
+            .swiper--css-default-skin .swiper-button:hover .swiper-arrow {
+                stroke: var(--theme-base-color);
+            }
+
+            /* vendors style */
+            .swiper--css-default-skin .swiper-button::after {
+                display: none;
+            }
+
+
+@media (min-width: 768px) {
+
+    .swiper--css-default-skin {
+
+    }
+        .swiper--css-default-skin .swiper-wrapper {
+            display: grid;
+            grid-auto-flow: column;
+        }
+            .swiper--css-default-skin .swiper-slide {
+                height: 100%;
+            }
+}
+
+
+
+
+/* Довольно запарно выключать слайдер на десктопах скриптом.
+   Проще перебить пару стилей:
+ */
+.swiper--css-disable-on-smartphone {
+
+}
+
+@media (width < 740px) {
+
+    .swiper--css-disable-on-smartphone {
+        overflow: visible;
+    }
+        .swiper--css-disable-on-smartphone .swiper-wrapper {
+            height: auto !important;
+            transform: none !important;
+        }
+            .swiper--css-disable-on-smartphone .swiper-slide {
+                width: auto !important;
+                margin: 0 !important;
+            }
+
+    .swiper--css-disable-on-smartphone .swiper-controls {
+        display: none;
+    }
+}
+
+
+/* Довольно запарно выключать слайдер на десктопах скриптом.
+   Проще перебить пару стилей:
+ */
+.swiper--css-disabled-on-desktop {
+
+}
+
+@media (740px <= width) {
+
+    .swiper--css-disabled-on-desktop {
+        overflow: visible;
+    }
+        .swiper--css-disabled-on-desktop .swiper-wrapper {
+            height: auto !important;
+            transform: none !important;
+        }
+            .swiper--css-disabled-on-desktop .swiper-slide {
+                width: auto !important;
+                margin: 0 !important;
+            }
+
+    .swiper--css-disabled-on-desktop .swiper-controls {
+        display: none;
+    }
+}

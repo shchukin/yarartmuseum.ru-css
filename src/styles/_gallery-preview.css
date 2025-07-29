@@ -1,0 +1,8 @@
+.gallery-preview {
+    display: block;
+}
+    .gallery-preview__image {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+    }

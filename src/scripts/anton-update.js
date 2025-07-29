@@ -1,36 +1,34 @@
 (function ($) {
+    $(window).on('load', function () {
 
-    /* Select placeholder */
-    function selectPlaceholder($element) {
-        if ($element.val() === 'placeholder') {
-            $element.parent('.input').addClass('input--placeholder-is-chosen');
-        } else {
-            $element.parent('.input').removeClass('input--placeholder-is-chosen');
-        }
-    }
+        /* Swiper */
+        document.querySelectorAll('.swiper--js-init-feedback').forEach((element, index) => {
+            new Swiper(element, {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                autoHeight: true,
+                spaceBetween: 24,
+                pagination: {
+                    el: element.querySelector('.swiper-pagination'),
+                    type: 'fraction',
+                },
+                navigation: {
+                    nextEl: element.querySelector('.swiper-button-next'),
+                    prevEl: element.querySelector('.swiper-button-prev'),
+                },
+                // breakpoints: {
+                //     768: {
+                //         slidesPerView: 2,
+                //         slidesPerGroup: 2,
+                //         autoHeight: false,
+                //     },
+                //     992: {
+                //         slidesPerView: 3,
+                //         slidesPerGroup: 3,
+                //     },
+                // },
+            });
+        });
 
-    $('select.input__widget').each(function () {
-        selectPlaceholder($(this));
-    }).on('change', function () {
-        selectPlaceholder($(this));
     });
-
-    /* Expanding textarea */
-    function expandTextarea($element) {
-        $element.css('height', 'auto');
-        $element.css('height', ($element[0].scrollHeight + 2 * parseInt($element.css('border-width'), 10)) + 'px');
-    }
-
-    $('.input--expandable .input__widget').each(function () {
-        expandTextarea($(this));
-    }).on('input', function () {
-        expandTextarea($(this));
-    });
-
-    /* Error field */
-    $('.input__widget').on('focus', function () {
-        $(this).parents('.input').removeClass('input--error');
-        $(this).parents('.input').nextUntil(':not(.helper--error)').remove();
-    });
-
 })(jQuery);
