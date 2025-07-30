@@ -450,6 +450,7 @@
 
             .filter--desktop-visible .filter__item--archive {
                 margin-left: auto;
+                margin-right: -18px;
                 /*padding-left: 48px;*/
                 /*background-image: url("../vectors/filter-item-archive.svg");*/
                 /*background-repeat: no-repeat;*/
