@@ -86,7 +86,7 @@
     .filter__dropdown {
         position: absolute;
         z-index: 100;
-        left: 12px;
+        left: 0;
         top: 100%;
         margin-top: 6px;
         min-width: 100%;
@@ -102,7 +102,9 @@
         }
 
         .filter__item {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 8px;
             width: 100%;
             border: none;
             padding: 12px 48px 12px 24px;
@@ -120,21 +122,17 @@
         .filter__item--archive {
 
         }
-            .filter__item--archive::before {
-                content: "";
+            .filter__item-icon {
+                vertical-align: top;
                 flex-shrink: 0;
-                margin-right: 8px;
-                float: left;
                 width: 16px;
                 height: 16px;
-                background-image: url("../vectors/filter-item-archive.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center center;
+                fill: currentColor;
             }
 
         .filter__item:hover {
             background-color: rgb(255 255 255 / 50%);
+            color: #212529;
         }
             .filter__item:has(.location) {
                 padding-top: 8px;
@@ -327,10 +325,7 @@
             }
 
             .filter__item--archive {
-                /*padding-left: 48px;*/
-                /*background-image: url("../vectors/filter-item-archive.svg");*/
-                /*background-repeat: no-repeat;*/
-                /*background-position: 24px center;*/
+
             }
 
             .filter__item:hover {
@@ -344,6 +339,13 @@
                 .filter__item .location {
                     /*margin-left: -24px;*/
                     /*color: #212529;*/
+                }
+
+                @media (max-width: 370px) {
+                    .filter__item .location {
+                        padding-left: 15px;
+                        margin-left: -15px;
+                    }
                 }
 
             .filter__item--сurrent {
@@ -451,10 +453,6 @@
             .filter--desktop-visible .filter__item--archive {
                 margin-left: auto;
                 margin-right: -18px;
-                /*padding-left: 48px;*/
-                /*background-image: url("../vectors/filter-item-archive.svg");*/
-                /*background-repeat: no-repeat;*/
-                /*background-position: 24px center;*/
             }
 
             .filter--desktop-visible .filter__item:hover {
