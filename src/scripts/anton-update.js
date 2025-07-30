@@ -41,7 +41,7 @@
         filters.forEach(filter => {
             const handler = filter.querySelector('.filter__handler');
             const resetBtn = filter.querySelector('.filter__reset');
-            const items = filter.querySelectorAll('.filter__item');
+            const items = filter.querySelectorAll('.filter__item:not(.filter__item--archive)');
 
             // Переключение видимости дропдауна при клике на хендлер
             handler.addEventListener('click', () => {

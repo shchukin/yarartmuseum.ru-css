@@ -106,12 +106,15 @@
             white-space: nowrap;
         }
 
-        .filter__item:hover {
-            background-color: rgb(255 255 255 / 50%);
+        .filter__item--archive {
+            padding-left: 48px;
+            background-image: url("../vectors/filter-item-archive.svg");
+            background-repeat: no-repeat;
+            background-position: 24px center;
         }
 
-        .filter__item--сurrent {
-            color: #919191;
+        .filter__item:hover {
+            background-color: rgb(255 255 255 / 50%);
         }
             .filter__item:has(.location) {
                 padding-top: 8px;
@@ -121,6 +124,13 @@
             .filter__item .location {
                 margin-left: -24px;
                 color: #212529;
+            }
+
+        .filter__item--сurrent {
+            color: #919191;
+        }
+            .filter__item--сurrent .location {
+                color: #919191;
             }
 
 
