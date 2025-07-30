@@ -1,0 +1,17 @@
+.informer {
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #404040;
+}
+    .informer__icon {
+        position: absolute;
+        left: 0;
+        top: -1px;
+        fill: currentColor;
+    }
+
+    .informer .link {
+        font-weight: 600;
+    }
