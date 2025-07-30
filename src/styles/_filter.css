@@ -19,11 +19,11 @@
                 content: "";
                 display: block;
                 position: absolute;
-                right: 24px;
-                top: 19px;
-                border-top: 4px solid currentColor;
-                border-left: 4px solid transparent;
-                border-right: 4px solid transparent;
+                right: 12px;
+                top: 9px;
+                width: 24px;
+                height: 24px;
+                background-image: url("../vectors/filter-chevron.svg");
                 transition: transform 200ms ease;
             }
 
@@ -195,7 +195,8 @@
                     /*content: "";*/
                     /*display: block;*/
                     /*position: absolute;*/
-                    top: 26px;
+                    top: 16px;
+                    right: 16px;
                     /*margin-top: -2px;*/
                     /*border-top: 4px solid currentColor;*/
                     /*border-left: 4px solid transparent;*/
