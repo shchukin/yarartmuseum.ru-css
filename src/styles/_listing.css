@@ -13,17 +13,18 @@
     }
 
     .listing__filters {
-        margin-top: 40px;
+        margin-top: 55px;
     }
         .listing__notifications {
 
         }
 
         .listing__filter-item {
-            margin-top: 16px;
+            margin-top: 24px;
         }
 
         .listing__reset-filters {
+            margin-top: -37px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -78,7 +79,7 @@
 
 
 @media (max-width: 991px) {
-    
+
     .listing {
 
     }
@@ -130,6 +131,9 @@
             /*height: 100px;*/
             /*background-color: purple;*/
         }
+            .listing__filter-item {
+                margin-top: 16px;
+            }
 
         .listing__body {
             /*margin-top: 40px;*/
