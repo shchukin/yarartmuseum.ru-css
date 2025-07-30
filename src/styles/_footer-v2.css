@@ -5,7 +5,7 @@
     .footer-v2__wrap {
 
     }
-        .footer__primary-section {
+        .footer-v2__primary-section {
             display: flex;
             align-items: center;
             gap: 190px;
@@ -34,7 +34,7 @@
                     color: var(--link-hover);
                 }
 
-        .footer__gallery {
+        .footer-v2__gallery {
             max-width: 734px;
             margin-top: 20px;
             margin-left: auto;
@@ -64,7 +64,7 @@
         .footer-v2__wrap {
 
         }
-            .footer__primary-section {
+            .footer-v2__primary-section {
                 display: block;
             }
                 .footer-v2__branding {
@@ -88,7 +88,7 @@
 
                     }
 
-            .footer__gallery {
+            .footer-v2__gallery {
                 margin-top: 22px;
             }
 
