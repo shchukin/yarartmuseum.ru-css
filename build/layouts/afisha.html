@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru" class="bx-core bx-mac bx-no-touch bx-retina bx-chrome">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>ЯХМ</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#fff">
+		<meta name="application-name" content="yarartmuseum">
+
+		<link href="../legacy/template_05db781fb7f902a07c4a2c9c4c59699a_v1.css?1753883433" type="text/css" data-template-style="true" rel="stylesheet">
+		<link href="../legacy/font-awesome.min.css?1753883433" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="../legacy/intickets.min.css?1753883433">
+		<script src="../legacy/jquery-1.12.4.min.js?1753883433"></script>
+
+		<!-- Anton's vendors -->
+		<link rel="stylesheet" href="../vendors/swiper/swiper-bundle.min.css?1753883433">
+		<script src="../vendors/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Anton's update -->
+		<link href="../styles/anton-update.css?1753883433" rel="stylesheet" type="text/css">
+		<script src="../scripts/anton-update.js?1753883433"></script>
+
+	</head>
+	<body role="document">
+
+		<header class="header ">
+			<div class="header-container d-flex justify-content-between">
+				<div class="container-logo align-items-center h-100 d-flex justify-content-center">
+					<a class="logo" href="https://yarartmuseum.ru/"><img src="../legacy/logo.svg" alt="logo"></a>
+				</div>
+				<div class="container-menu  d-flex">
+					<nav class="nav nav-menu js-mobile-menu ">
+						<ul class="nav__list d-flex align-items-center">
+							<li class="nav__item ">
+								<a class="nav__link stretched-link" href="https://yarartmuseum.ru/">
+									Главная </a>
+								<ul class="nav__list d-flex align-items-center">
+								</ul>
+							</li>
+							<li class="nav__item ">
+								<a class="nav__link stretched-link" href="https://yarartmuseum.ru/about/">
+									О музее </a>
+								<ul class="nav__list d-flex align-items-center">
+								</ul>
+							</li>
+							<li class="nav__item active ">
+								<a class="nav__link stretched-link" href="javascript:void(0)">
+									Выставки и события </a>
+								<ul class="nav__list d-flex align-items-center">
+								</ul>
+							</li>
+							<li class="nav__item ">
+								<a class="nav__link stretched-link" href="https://yarartmuseum.ru/prices/">
+									Цены </a>
+								<ul class="nav__list d-flex align-items-center">
+								</ul>
+							</li>
+							<li class="nav__item ">
+								<a class="nav__link stretched-link" href="https://yarartmuseum.ru/contacts/">
+									Контакты </a>
+								<ul class="nav__list d-flex align-items-center">
+								</ul>
+							</li>
+							<li class="nav__item ">
+								<a class="nav__link stretched-link" href="https://iframeab-pre10822.intickets.ru/#abiframe">
+									Пушкинская карта </a>
+								<ul class="nav__list d-flex align-items-center">
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div id="bee_cart-header" class="bc-cart-w bc-cart-w_media ">
+						<div class="bc-cart-w-btn-show-cart bc-cart-w-btn-show-cart_media">
+							<div class="bc-cart-w-btn-show-cart-image-w">
+								<div class="bc-cart-w-btn-show-cart-count-w">
+									<div class="bc-cart-w-btn-show-cart-count__ico">
+										<svg width="31" height="35" viewBox="0 0 31 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M30.4434 9.43614H23.5139V3.68514C23.5139 3.55527 23.4629 3.43075 23.3719 3.33881L20.9006 0.842605L20.8999 0.842083C20.8848 0.826869 20.8684 0.813027 20.8514 0.799903L20.8399 0.791153C20.8226 0.778617 20.8047 0.766994 20.7858 0.756808L20.7817 0.75485C20.764 0.745513 20.7455 0.737481 20.7267 0.730364C20.7227 0.728862 20.7188 0.727361 20.7148 0.725989C20.6947 0.719068 20.6742 0.713061 20.653 0.708752L20.649 0.708164C20.6301 0.704508 20.6109 0.702288 20.5914 0.700916C20.5853 0.700459 20.5792 0.700198 20.5731 0.700002L20.5662 0.699621C20.5634 0.69942 20.5605 0.699219 20.5577 0.699219H10.6721C10.6693 0.699219 10.6664 0.699422 10.6636 0.699624L10.6569 0.700002C10.6506 0.700198 10.6442 0.700525 10.6379 0.700982C10.6191 0.702288 10.6005 0.704508 10.5824 0.707968L10.5793 0.708425L10.5763 0.708882C10.5556 0.713061 10.5355 0.718938 10.5159 0.725728C10.5117 0.727164 10.5077 0.728701 10.5036 0.730251L10.5019 0.730887C10.4842 0.737612 10.4669 0.745121 10.4503 0.753805L10.4468 0.755503L10.4433 0.7572C10.425 0.767125 10.4076 0.778421 10.3909 0.7905C10.3864 0.793765 10.3819 0.79716 10.3775 0.800621C10.3614 0.813158 10.3458 0.826347 10.3314 0.840777L10.3293 0.84254L7.85781 3.33875C7.76686 3.43062 7.71579 3.55513 7.71579 3.68507V9.43601H0.786409C0.518651 9.43601 0.301575 9.65521 0.301575 9.92572V29.8957C0.301575 29.9121 0.302415 29.9284 0.304031 29.9446C0.305121 29.9559 0.307005 29.967 0.308886 29.978L0.309267 29.9802L0.310079 29.9857C0.310368 29.9878 0.310656 29.99 0.311077 29.9921C0.313857 30.0062 0.317413 30.0199 0.321356 30.0336L0.322584 30.0384C0.326786 30.0524 0.331764 30.066 0.337129 30.0795L0.338551 30.0834C0.343917 30.0964 0.349929 30.109 0.356329 30.1214L0.357511 30.1239L0.35885 30.1267C0.365185 30.1386 0.372167 30.15 0.379407 30.1613L0.381248 30.1644L0.383285 30.1678C0.390849 30.1792 0.398994 30.1901 0.407462 30.2007L0.409181 30.2031L0.4116 30.2063C0.421878 30.2189 0.432738 30.2309 0.444116 30.2425L4.15064 33.9864C4.24153 34.0783 4.36487 34.1299 4.49345 34.1299L26.7362 34.1295C26.8648 34.1295 26.9881 34.078 27.079 33.9862L30.7858 30.2423C30.7972 30.2309 30.8079 30.2188 30.8181 30.2063C30.8194 30.2047 30.8204 30.203 30.8217 30.2014C30.8304 30.1907 30.8387 30.1795 30.8464 30.1679L30.8485 30.1645L30.8501 30.1619C30.8574 30.1504 30.8645 30.1387 30.8709 30.1267L30.8722 30.1241L30.8729 30.1224L30.8776 30.1132C30.8825 30.1035 30.887 30.0936 30.8912 30.0834L30.8922 30.0807C30.8945 30.0749 30.8968 30.0691 30.8989 30.0632C30.9019 30.0551 30.9046 30.0469 30.9071 30.0385L30.9079 30.0356L30.9082 30.0342C30.9122 30.0204 30.9159 30.0065 30.9187 29.9922L30.9193 29.9885L30.9196 29.9862L30.9204 29.9812L30.9208 29.9787C30.9227 29.9675 30.9247 29.9562 30.9258 29.9448C30.9274 29.9286 30.9282 29.9123 30.9282 29.8958V9.92585C30.9282 9.65534 30.7112 9.43614 30.4434 9.43614ZM21.0425 3.68514V2.37115L22.5443 3.88794V9.43614H21.0425V3.68514ZM11.1569 1.67864H20.0728V3.19543H11.1569V1.67864ZM11.1569 4.17484H20.0728V9.43608H11.1569V4.17484ZM8.68532 3.88801L10.1871 2.37121V9.43614H8.68532V3.88801ZM29.2727 30.3856L26.5354 33.1503L4.6943 33.1506L1.95686 30.3855L29.2727 30.3856ZM1.27124 29.4061L29.9584 29.4061V10.4156H23.029H20.5576H10.672H8.20049H1.27124V29.4061Z" fill="black"></path>
+										</svg>
+									</div>
+									<div class="bc-cart-w-btn-show-cart-count__close">
+										<svg height="100%" width="100%" id="close" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z"></path>
+										</svg>
+										<svg width="31" height="35" viewBox="0 0 31 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M30.4434 9.43614H23.5139V3.68514C23.5139 3.55527 23.4629 3.43075 23.3719 3.33881L20.9006 0.842605L20.8999 0.842083C20.8848 0.826869 20.8684 0.813027 20.8514 0.799903L20.8399 0.791153C20.8226 0.778617 20.8047 0.766994 20.7858 0.756808L20.7817 0.75485C20.764 0.745513 20.7455 0.737481 20.7267 0.730364C20.7227 0.728862 20.7188 0.727361 20.7148 0.725989C20.6947 0.719068 20.6742 0.713061 20.653 0.708752L20.649 0.708164C20.6301 0.704508 20.6109 0.702288 20.5914 0.700916C20.5853 0.700459 20.5792 0.700198 20.5731 0.700002L20.5662 0.699621C20.5634 0.69942 20.5605 0.699219 20.5577 0.699219H10.6721C10.6693 0.699219 10.6664 0.699422 10.6636 0.699624L10.6569 0.700002C10.6506 0.700198 10.6442 0.700525 10.6379 0.700982C10.6191 0.702288 10.6005 0.704508 10.5824 0.707968L10.5793 0.708425L10.5763 0.708882C10.5556 0.713061 10.5355 0.718938 10.5159 0.725728C10.5117 0.727164 10.5077 0.728701 10.5036 0.730251L10.5019 0.730887C10.4842 0.737612 10.4669 0.745121 10.4503 0.753805L10.4468 0.755503L10.4433 0.7572C10.425 0.767125 10.4076 0.778421 10.3909 0.7905C10.3864 0.793765 10.3819 0.79716 10.3775 0.800621C10.3614 0.813158 10.3458 0.826347 10.3314 0.840777L10.3293 0.84254L7.85781 3.33875C7.76686 3.43062 7.71579 3.55513 7.71579 3.68507V9.43601H0.786409C0.518651 9.43601 0.301575 9.65521 0.301575 9.92572V29.8957C0.301575 29.9121 0.302415 29.9284 0.304031 29.9446C0.305121 29.9559 0.307005 29.967 0.308886 29.978L0.309267 29.9802L0.310079 29.9857C0.310368 29.9878 0.310656 29.99 0.311077 29.9921C0.313857 30.0062 0.317413 30.0199 0.321356 30.0336L0.322584 30.0384C0.326786 30.0524 0.331764 30.066 0.337129 30.0795L0.338551 30.0834C0.343917 30.0964 0.349929 30.109 0.356329 30.1214L0.357511 30.1239L0.35885 30.1267C0.365185 30.1386 0.372167 30.15 0.379407 30.1613L0.381248 30.1644L0.383285 30.1678C0.390849 30.1792 0.398994 30.1901 0.407462 30.2007L0.409181 30.2031L0.4116 30.2063C0.421878 30.2189 0.432738 30.2309 0.444116 30.2425L4.15064 33.9864C4.24153 34.0783 4.36487 34.1299 4.49345 34.1299L26.7362 34.1295C26.8648 34.1295 26.9881 34.078 27.079 33.9862L30.7858 30.2423C30.7972 30.2309 30.8079 30.2188 30.8181 30.2063C30.8194 30.2047 30.8204 30.203 30.8217 30.2014C30.8304 30.1907 30.8387 30.1795 30.8464 30.1679L30.8485 30.1645L30.8501 30.1619C30.8574 30.1504 30.8645 30.1387 30.8709 30.1267L30.8722 30.1241L30.8729 30.1224L30.8776 30.1132C30.8825 30.1035 30.887 30.0936 30.8912 30.0834L30.8922 30.0807C30.8945 30.0749 30.8968 30.0691 30.8989 30.0632C30.9019 30.0551 30.9046 30.0469 30.9071 30.0385L30.9079 30.0356L30.9082 30.0342C30.9122 30.0204 30.9159 30.0065 30.9187 29.9922L30.9193 29.9885L30.9196 29.9862L30.9204 29.9812L30.9208 29.9787C30.9227 29.9675 30.9247 29.9562 30.9258 29.9448C30.9274 29.9286 30.9282 29.9123 30.9282 29.8958V9.92585C30.9282 9.65534 30.7112 9.43614 30.4434 9.43614ZM21.0425 3.68514V2.37115L22.5443 3.88794V9.43614H21.0425V3.68514ZM11.1569 1.67864H20.0728V3.19543H11.1569V1.67864ZM11.1569 4.17484H20.0728V9.43608H11.1569V4.17484ZM8.68532 3.88801L10.1871 2.37121V9.43614H8.68532V3.88801ZM29.2727 30.3856L26.5354 33.1503L4.6943 33.1506L1.95686 30.3855L29.2727 30.3856ZM1.27124 29.4061L29.9584 29.4061V10.4156H23.029H20.5576H10.672H8.20049H1.27124V29.4061Z" fill="black"></path>
+										</svg>
+									</div>
+									<div class="bc-cart-w-btn-show-cart-count">
+										0
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="additional d-flex align-items-center"><a class="additional__search" href="https://yarartmuseum.ru/search/"></a></div>
+					<div class="mobile-menu align-items-center d-flex d-md-none"><a class="menu-bar js-menu-bar" href="javascript:void(0);"><span class="menu-bar__stick"></span><span class="menu-bar__stick"></span><span class="menu-bar__stick"></span></a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<main class="main">
+
+			<div class="listing container">
+				<div class="listing__heading">
+					Афиша
+				</div>
+				<div class="listing__filters">
+					<div class="listing__notifications">
+						<div class="informer">
+							<svg class="informer__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+								<path fill="#2D2D2D" d="M9.167 5.833h1.666V7.5H9.167V5.833Zm0 3.334h1.666v5H9.167v-5Zm.833-7.5A8.336 8.336 0 0 0 1.667 10c0 4.6 3.733 8.333 8.333 8.333S18.333 14.6 18.333 10 14.6 1.667 10 1.667Zm0 15A6.676 6.676 0 0 1 3.333 10 6.676 6.676 0 0 1 10 3.333 6.676 6.676 0 0 1 16.667 10 6.676 6.676 0 0 1 10 16.667Z"/>
+							</svg>
+							<a class="link link--text-alike" href="#">Правила покупки</a>, <a class="link link--text-alike" href="#">возврат билетов</a>, <a class="link link--text-alike" href="#">льготы</a> и&nbsp;<a class="link link--text-alike" href="#">бесплатные дни</a>
+						</div>
+					</div>
+					<div class="listing__filter-item">
+						<div class="filter filter--desktop-visible filter--framed-on-desktop">
+							<div class="filter__head">
+								<button class="filter__handler" type="button">
+									Все выставки
+								</button>
+								<button class="filter__reset" type="button">
+									Сбросить
+								</button>
+							</div>
+							<div class="filter__dropdown">
+								<button class="filter__item filter__item--сurrent" type="button">Всё в музее</button>
+								<button class="filter__item" type="button">Постоянные экспозиции</button>
+								<button class="filter__item" type="button">Текущие выставки</button>
+								<button class="filter__item" type="button">Сборные экскурсии</button>
+								<div class="filter__line-break"></div>
+								<button class="filter__item" type="button">События</button>
+								<button class="filter__item" type="button">Музыка в музее</button>
+								<button class="filter__item" type="button">Детям</button>
+								<button class="filter__item" type="button">Участникам СВО</button>
+								<a class="filter__item filter__item--archive" href="#">
+									<svg class="filter__item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+										<path d="M3.206.047a.82.82 0 0 0-.515.578c-.022.106-.035.834-.035 2.169v2.01l-.24.015c-.391.025-.716.228-.882.547-.03.068-.393 1.325-.796 2.793L0 10.83l.006 2.296c.01 2.287.01 2.297.078 2.422a.993.993 0 0 0 .385.378c.106.056.353.06 7.531.06h7.422l.125-.07a.994.994 0 0 0 .378-.384c.056-.103.06-.234.069-2.403l.01-2.297-.742-2.672c-.403-1.468-.762-2.725-.796-2.793-.166-.32-.491-.522-.878-.547l-.241-.016-.01-2.097c-.009-2.315 0-2.193-.212-2.437a1.072 1.072 0 0 0-.231-.185l-.128-.068-4.72-.007C4.054.003 3.31.01 3.207.047Zm9.503.56.088.074.01 4.722.005 4.722h-.837c-.969 0-1.084.019-1.303.222-.172.16-.238.297-.269.581-.04.375-.206.619-.506.744-.172.072-3.622.072-3.794 0-.3-.125-.465-.369-.506-.744-.031-.284-.097-.422-.269-.581-.219-.203-.334-.222-1.303-.222h-.838l.007-4.722.01-4.722.087-.075.087-.075h9.244l.087.075ZM2.656 7.733v2.391H1.7c-.894 0-.953-.003-.938-.056.01-.028.285-1.031.616-2.225.328-1.194.622-2.213.65-2.26.081-.14.272-.24.466-.24h.162v2.39Zm11.131-2.321a.62.62 0 0 1 .182.165c.031.05.325 1.072.653 2.266.331 1.194.606 2.197.616 2.225.015.053-.044.056-.938.056h-.956V5.344h.16c.105 0 .2.022.284.069Zm-8.88 5.284c.1.05.143.147.184.422.09.606.534 1.04 1.143 1.131.288.04 3.244.04 3.532 0a1.37 1.37 0 0 0 .78-.387c.204-.21.317-.441.363-.744.041-.275.082-.372.185-.422.062-.031.531-.038 2.15-.031l2.075.006.075.087.075.088V15.287l-.09.091-.091.09H.713l-.091-.09-.09-.09v-2.216c0-2.403-.007-2.316.168-2.384.034-.016.981-.029 2.097-.029 1.565-.003 2.05.007 2.11.038Z"/>
+										<path d="M4.422 2.163c-.16.084-.194.306-.069.425l.072.068h7.159l.066-.072c.069-.071.09-.212.05-.318-.056-.144.028-.141-3.706-.141-2.481.003-3.528.013-3.572.038ZM4.35 4.353a.264.264 0 0 0 .013.369l.08.075H11.557l.082-.075c.106-.1.112-.275.009-.372l-.072-.069H4.416l-.066.072ZM4.362 6.472c-.1.081-.112.262-.021.375l.059.075h7.2l.06-.075c.09-.113.078-.294-.023-.375-.084-.066-.09-.066-3.637-.066s-3.553 0-3.638.066ZM4.36 8.61a.24.24 0 0 0-.079.187.24.24 0 0 0 .078.187l.075.079h4.72l.084-.075c.065-.057.087-.1.087-.191 0-.09-.022-.135-.087-.19l-.085-.076H4.434l-.075.078ZM6.037 12.894a.781.781 0 0 0-.196 1.262c.253.253.225.25 2.159.25 1.934 0 1.906.003 2.16-.25a.792.792 0 0 0-.141-1.234l-.153-.094-1.832-.01-1.83-.005-.167.08Zm3.738.512a.26.26 0 0 1-.056.428c-.113.057-3.325.057-3.438 0a.26.26 0 0 1-.056-.428c.066-.062.103-.062 1.775-.062s1.71 0 1.775.062Z"/>
+									</svg>
+									Архив выставок
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="listing__filter-item">
+						<div class="filter filter--desktop-visible">
+							<div class="filter__head">
+								<button class="filter__handler" type="button">
+									Все дни
+								</button>
+								<button class="filter__reset" type="button">
+									Сбросить
+								</button>
+							</div>
+							<div class="filter__dropdown">
+								<button class="filter__item filter__item--сurrent" type="button">Все дни</button>
+								<button class="filter__item" type="button">Сегодня</button>
+								<button class="filter__item" type="button">Завтра</button>
+								<button class="filter__item filter__item--calendar" type="button">
+									Дата
+									<svg class="filter__item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+										<path d="M13.333 2h-.666V.667h-1.334V2H4.667V.667H3.333V2h-.666c-.734 0-1.334.6-1.334 1.333V14c0 .733.6 1.333 1.334 1.333h10.666c.734 0 1.334-.6 1.334-1.333V3.333c0-.733-.6-1.333-1.334-1.333Zm0 12H2.667V6.667h10.666V14Zm0-8.667H2.667v-2h10.666v2Z"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="listing__filter-item">
+						<div class="filter">
+							<div class="filter__head">
+								<button class="filter__handler" type="button">
+									Все здания
+								</button>
+								<button class="filter__reset" type="button">
+									Сбросить
+								</button>
+							</div>
+							<div class="filter__dropdown">
+								<button class="filter__item filter__item--сurrent" type="button">
+									Все здания
+								</button>
+								<button class="filter__item" type="button">
+									<div class="location location--red-mark">
+										<div class="location__name">Губернаторский дом</div>
+										<div class="location__address">Волжская <span class="nobr">набережная, 23</span></div>
+									</div>
+								</button>
+								<button class="filter__item" type="button">
+									<div class="location location--green-mark">
+										<div class="location__name">Митрополичьи палаты</div>
+										<div class="location__address">Волжская <span class="nobr">набережная, 1</span></div>
+									</div>
+								</button>
+								<button class="filter__item" type="button">
+									<div class="location location--purple-mark">
+										<div class="location__name">Музей зарубежного искусства</div>
+										<div class="location__address">Советская <span class="nobr">площадь, 2</span></div>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+					<button class="listing__reset-filters" type="button">
+						Сбросить фильтр
+						<svg class="listing__funnel" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+							<path d="M6.667 12h2.666v-1.333H6.667V12ZM2 4v1.333h12V4H2Zm2 4.667h8V7.333H4v1.334Z"/>
+						</svg>
+					</button>
+				</div>
+				<div class="listing__body">
+					<div class="event-card">
+						<a class="event-card__preview" href="#">
+							<img class="event-card__image"
+								 srcset="../temp/event-card/event-card-a@2x.jpg 1.5x"
+								 src="../temp/event-card/event-card-a.jpg"
+								 width="356"
+								 height="267"
+								 alt=""
+							>
+						</a>
+						<div class="event-card__tag">
+							Выставка
+						</div>
+						<div class="event-card__body">
+							<div class="event-card__dates">
+								28 июня - 19 октября
+							</div>
+							<div class="event-card__heading">
+								<a class="event-card__link" href="#">Московские коллекционеры</a>
+							</div>
+							<div class="event-card__description">
+								выставка из собрания ГМИИ им. А.С. Пушкина, Москва
+							</div>
+							<div class="event-card__footer">
+								<div class="event-card__location">
+									<div class="location location--purple-mark">
+										<div class="location__name">Музей зарубежного искусства</div>
+										<div class="location__address">Советская <span class="nobr">площадь, 2</span></div>
+									</div>
+								</div>
+								<div class="event-card__action">
+									<a class="btn btn-primary" href="#">
+										Купить&nbsp;билет
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-card">
+						<a class="event-card__preview" href="#">
+							<img class="event-card__image"
+								 srcset="../temp/event-card/event-card-b@2x.jpg 1.5x"
+								 src="../temp/event-card/event-card-b.jpg"
+								 width="356"
+								 height="267"
+								 alt=""
+							>
+						</a>
+						<div class="event-card__tag">
+							Выставка
+						</div>
+						<div class="event-card__body">
+							<div class="event-card__dates">
+								04 июля - 16 ноября
+							</div>
+							<div class="event-card__heading">
+								<a class="event-card__link" href="#">Ариадна Соколова. Оттепель</a>
+							</div>
+							<div class="event-card__description">
+								К 100-летию художника
+							</div>
+							<div class="event-card__footer">
+								<div class="event-card__location">
+									<div class="location location--red-mark">
+										<div class="location__name">Губернаторский дом</div>
+										<div class="location__address">Волжская <span class="nobr">набережная, 23</span></div>
+									</div>
+								</div>
+								<div class="event-card__action">
+									<a class="btn btn-primary" href="#">
+										Купить&nbsp;билет
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-card">
+						<a class="event-card__preview" href="#">
+							<img class="event-card__image"
+								 srcset="../temp/event-card/event-card-c@2x.jpg 1.5x"
+								 src="../temp/event-card/event-card-c.jpg"
+								 width="356"
+								 height="267"
+								 alt=""
+							>
+						</a>
+						<div class="event-card__tag">
+							Событие
+						</div>
+						<div class="event-card__body">
+							<div class="event-card__dates">
+								26 июля с 16:00 до 22:00
+							</div>
+							<div class="event-card__heading">
+								<a class="event-card__link" href="#">Музыкальный фестиваль «Лимон»</a>
+							</div>
+							<div class="event-card__description">
+								Главное музыкальное событие лета
+							</div>
+							<div class="event-card__footer">
+								<div class="event-card__location">
+									<div class="location location--red-mark">
+										<div class="location__name">Губернаторский сад</div>
+										<div class="location__address">Волжская <span class="nobr">набережная, 23</span></div>
+									</div>
+								</div>
+								<div class="event-card__action">
+									<a class="btn btn-primary" href="#">
+										Купить&nbsp;билет
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-card">
+						<a class="event-card__preview" href="#">
+							<img class="event-card__image"
+								 srcset="../temp/event-card/event-card-d@2x.jpg 1.5x"
+								 src="../temp/event-card/event-card-d.jpg"
+								 width="356"
+								 height="267"
+								 alt=""
+							>
+						</a>
+						<div class="event-card__tag">
+							Выставка
+						</div>
+						<div class="event-card__body">
+							<div class="event-card__dates">
+								21 февраля - 28 сентября
+							</div>
+							<div class="event-card__heading">
+								<a class="event-card__link" href="#">Спор о бороде</a>
+							</div>
+							<div class="event-card__description">
+								Оригинальное музейное действо с подлинными произведениями XVIII–XX веков, анимацией, музыкой, светом и звуком
+							</div>
+							<div class="event-card__footer">
+								<div class="event-card__location">
+									<div class="location location--green-mark">
+										<div class="location__name">Митрополичьи палаты</div>
+										<div class="location__address">Волжская <span class="nobr">набережная, 1</span></div>
+									</div>
+								</div>
+								<div class="event-card__action">
+									<a class="btn btn-primary" href="#">
+										Купить&nbsp;билет
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-card">
+						<a class="event-card__preview" href="#">
+							<img class="event-card__image"
+								 srcset="../temp/event-card/event-card-e@2x.jpg 1.5x"
+								 src="../temp/event-card/event-card-e.jpg"
+								 width="356"
+								 height="267"
+								 alt=""
+							>
+						</a>
+						<div class="event-card__tag">
+							Выставка
+						</div>
+						<div class="event-card__body">
+							<div class="event-card__dates">
+								28 июня - 19 октября
+							</div>
+							<div class="event-card__heading">
+								<a class="event-card__link" href="#">Московские коллекционеры</a>
+							</div>
+							<div class="event-card__description">
+								выставка из собрания ГМИИ им. А.С. Пушкина, Москва
+							</div>
+							<div class="event-card__footer">
+								<div class="event-card__location">
+									<div class="location location--purple-mark">
+										<div class="location__name">Музей зарубежного искусства</div>
+										<div class="location__address">Советская <span class="nobr">площадь, 2</span></div>
+									</div>
+								</div>
+								<div class="event-card__action">
+									<a class="btn btn-primary" href="#">
+										Купить&nbsp;билет
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-card">
+						<a class="event-card__preview" href="#">
+							<img class="event-card__image"
+								 srcset="../temp/event-card/event-card-f@2x.jpg 1.5x"
+								 src="../temp/event-card/event-card-f.jpg"
+								 width="356"
+								 height="267"
+								 alt=""
+							>
+						</a>
+						<div class="event-card__tag">
+							Выставка
+						</div>
+						<div class="event-card__body">
+							<div class="event-card__dates">
+								04 июля - 16 ноября
+							</div>
+							<div class="event-card__heading">
+								<a class="event-card__link" href="#">Ариадна Соколова. Оттепель</a>
+							</div>
+							<div class="event-card__description">
+								К 100-летию художника
+							</div>
+							<div class="event-card__footer">
+								<div class="event-card__location">
+									<div class="location location--red-mark">
+										<div class="location__name">Губернаторский дом</div>
+										<div class="location__address">Волжская <span class="nobr">набережная, 23</span></div>
+									</div>
+								</div>
+								<div class="event-card__action">
+									<a class="btn btn-primary" href="#">
+										Купить&nbsp;билет
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="listing__more">
+					<button class="btn btn-link" type="button">
+						Ещё выставки
+					</button>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer-v2">
+			<div class="footer-v2__wrap container">
+				<div class="footer__primary-section">
+					<div class="footer-v2__branding">
+						<a class="logo" href="https://yarartmuseum.ru/">
+							<img src="../legacy/logo.svg" alt="logo">
+						</a>
+					</div>
+					<nav class="footer-v2__navigation">
+						<a class="footer-v2__link" href="#">Главная</a>
+						<a class="footer-v2__link" href="#">О музее</a>
+						<a class="footer-v2__link" href="#">Выставки и события</a>
+						<a class="footer-v2__link" href="#">Цены</a>
+						<a class="footer-v2__link" href="#">Контакты</a>
+						<a class="footer-v2__link" href="#">Пушкинская карта</a>
+					</nav>
+				</div>
+				<div class="footer__gallery">
+
+					<div class="swiper  swiper--js-init-feedback  swiper--css-default-skin">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a class="gallery-preview" href="#">
+									<img class="gallery-preview__image"
+										 srcset="../temp/footer-gallery/footer-gallery-a@2x.jpg 1.5x"
+										 src="../temp/footer-gallery/footer-gallery-a@1x.jpg"
+										 width="734"
+										 height="245"
+										 alt=""
+									>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="gallery-preview" href="#">
+									<img class="gallery-preview__image"
+										 srcset="../temp/footer-gallery/footer-gallery-b@2x.jpg 1.5x"
+										 src="../temp/footer-gallery/footer-gallery-b@1x.jpg"
+										 width="734"
+										 height="245"
+										 alt=""
+									>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="gallery-preview" href="#">
+									<img class="gallery-preview__image"
+										 srcset="../temp/footer-gallery/footer-gallery-c@2x.jpg 1.5x"
+										 src="../temp/footer-gallery/footer-gallery-c@1x.jpg"
+										 width="734"
+										 height="245"
+										 alt=""
+									>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="gallery-preview" href="#">
+									<img class="gallery-preview__image"
+										 srcset="../temp/footer-gallery/footer-gallery-d@2x.jpg 1.5x"
+										 src="../temp/footer-gallery/footer-gallery-d@1x.jpg"
+										 width="734"
+										 height="245"
+										 alt=""
+									>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-controls">
+							<div class="swiper-button swiper-button-prev">
+								<svg class="swiper-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 16" width="26" height="16">
+									<path d="M.793 7.303a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.914 8.01l5.657-5.657A1 1 0 0 0 7.157.94L.793 7.303ZM25.5 8.01v-1h-24v2h24v-1Z"/>
+								</svg>
+							</div>
+							<div class="swiper-pagination">
+
+							</div>
+							<div class="swiper-button swiper-button-next">
+								<svg class="swiper-arrow" xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16">
+									<path d="M25.207 8.707a1 1 0 0 0 0-1.414L18.843.929a1 1 0 1 0-1.414 1.414L23.086 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM.5 8v1h24V7H.5v1Z"/>
+								</svg>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer-v2__legalities">
+					<div class="footer-v2__item">
+						© ЯХМ, 1919 – 2025 г. 
+					</div>
+					<div class="footer-v2__item">
+						<a class="link link--inverted-text-alike" href="#">Официальные документы</a>
+					</div>
+					<div class="footer-v2__item">
+						<a class="link link--inverted-text-alike" href="#">Версия для слабовидящих</a>
+					</div>
+					<div class="footer-v2__item">
+						<a class="red-star" href="https://redstar.agency">
+							разработано в&nbsp;<b class="red-star__logo">Редстар</b>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
