@@ -34,8 +34,12 @@
         });
 
 
-        /* Фильтр */
-        // Находим все фильтры на странице
+
+        /* Фильтр (Написано нейронкой под присмотром).
+         * Обращаем внимаение на то, что может быть выбранным значением в фильтре:
+         * это как просто текст скопированный из filter__item, так и любоё другой
+         * html-код изнутрь например компонент location.
+         */
         const filters = document.querySelectorAll('.filter');
 
         filters.forEach(filter => {
@@ -66,6 +70,9 @@
             // Обработка выбора пункта фильтра
             items.forEach((item, index) => {
                 item.addEventListener('click', () => {
+                    if (item.classList.contains('filter__item--calendar')) {
+                        alert('Здесь вызвать датапикер. В проекте уже есть один: datepicker for bootstrap. Смотри страницу "Цены", форму "Заказать экскурсию".');
+                    }
                     // Удаляем класс текущего выбранного пункта
                     items.forEach(i => i.classList.remove('filter__item--сurrent'));
                     // Добавляем класс текущего выбранного пункта
