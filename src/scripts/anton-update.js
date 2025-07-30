@@ -70,8 +70,8 @@
                     items.forEach(i => i.classList.remove('filter__item--сurrent'));
                     // Добавляем класс текущего выбранного пункта
                     item.classList.add('filter__item--сurrent');
-                    // Обновляем HTML хендлера на HTML выбранного пункта
-                    handler.innerHTML = item.innerHTML;
+                    // Обновляем HTML хендлера на HTML выбранного пункта, удаляя SVG-иконку
+                    handler.innerHTML = item.innerHTML.replace(/<svg\b[^<]*(?:(?!<\/svg>)<[^<]*)*<\/svg>/gi, '').trim();
                     // Добавляем или удаляем класс filter--value-selected в зависимости от выбранного пункта
                     if (index !== 0) {
                         filter.classList.add('filter--value-selected');
