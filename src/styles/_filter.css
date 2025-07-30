@@ -1,3 +1,152 @@
 .filter {
+    position: relative;
+    width: fit-content;
+}
+    .filter__head {
+
+    }
+        .filter__handler {
+            padding: 6px 38px 6px 12px;
+            border: none;
+            background-color: transparent;
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px; /* По высоте идентично .location */
+            text-align: left;
+        }
+            .filter__handler::after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 24px;
+                top: 50%;
+                margin-top: -2px;
+                border-top: 4px solid currentColor;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                transition: transform 200ms ease;
+            }
+
+            .filter--expanded .filter__handler::after {
+                transform: scaleY(-1);
+            }
+
+        .filter__handler:has(.location) {
+            padding-left: 0;
+        }
+            .filter__handler .location {
+                padding-left: 16px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+
+            .filter__handler .location__address {
+                margin-top: 0;
+            }
+
+        .filter__reset {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            background-color: transparent;
+            background-image: url("../vectors/filter-cross.svg");
+            background-size: 24px 24px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 0;
+            border: none;
+            display: none;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+            .filter__reset::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+            }
+
+            .filter__reset:hover::after {
+                background-color: rgb(255 255 255 / 10%);
+            }
+
+    .filter__dropdown {
+        position: absolute;
+        z-index: 100;
+        left: 12px;
+        top: 100%;
+        margin-top: 6px;
+        min-width: 100%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #E9EFF2;
+        border: 1px solid #2D2D2D;
+        display: none;
+    }
+        .filter__item {
+            display: block;
+            width: 100%;
+            border: none;
+            padding: 12px 48px 12px 24px;
+            background-color: transparent;
+            font-family: inherit;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 18px;
+            color: #212529;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .filter__item:hover {
+            background-color: rgb(255 255 255 / 50%);
+        }
+
+        .filter__item--сurrent {
+            color: #919191;
+        }
+            .filter__item:has(.location) {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+            .filter__item .location {
+                margin-left: -24px;
+                color: #212529;
+            }
+
+
+
+
+
+.filter--value-selected {
 
 }
+    .filter--value-selected .filter__handler {
+        background-color: #2D2D2D;
+        color: #FFFFFF;
+    }
+        .filter--value-selected .filter__handler::after {
+            display: none;
+        }
+
+    .filter--value-selected .filter__reset {
+        display: block;
+    }
+
+
+
+.filter--expanded {
+
+}
+    .filter--expanded .filter__dropdown {
+        display: block;
+    }

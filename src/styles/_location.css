@@ -1,38 +1,37 @@
 .location {
     position: relative;
+    padding-left: 24px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
 }
     .location__name {
-        font-size: 12px;
-        line-height: 14px;
-        color: #999999;
+
     }
 
     .location__address {
         margin-top: 2px;
-        font-size: 12px;
-        line-height: 14px;
-        color: #999999;
     }
 
-    .location::after {
+    .location::before {
         content: "";
         position: absolute;
-        left: -24px;
+        left: 0;
         top: 0;
         bottom: 0;
         width: 4px;
     }
 
 
-    .location--red-mark::after {
+    .location--red-mark::before {
         background-color: #FF4D37;
     }
 
-    .location--green-mark::after {
+    .location--green-mark::before {
         background-color: #4ED953;
     }
 
-    .location--purple-mark::after {
+    .location--purple-mark::before {
         background-color: #C443B9;
     }
 
@@ -41,19 +40,15 @@
 @media (max-width: 1199px) {
 
     .location {
-
+        padding-left: 20px;
+        font-size: 10px;
+        line-height: 12px;
     }
         .location__name {
-            font-size: 10px;
-            line-height: 12px;
+
         }
 
         .location__address {
-            font-size: 10px;
-            line-height: 12px;
-        }
 
-        .location::after {
-            left: -20px;
         }
 }
