@@ -173,10 +173,7 @@
 
         }
             .filter__handler {
-                /*padding: 6px 38px 6px 12px;*/
-                padding-right: 50px;
-                padding-top: 13px;
-                padding-bottom: 13px;
+                padding: 13px 50px 13px 24px;
                 width: 100%;
                 border: 1px solid #2D2D2D;
                 border-radius: 2px;
@@ -187,6 +184,13 @@
                 /*line-height: 28px; !* По высоте идентично .location *!*/
                 /*text-align: left;*/
             }
+
+            @media (max-width: 370px) {
+                .filter__handler {
+                    padding-left: 15px;
+                }
+            }
+
                 .filter__handler::after {
                     /*content: "";*/
                     /*display: block;*/
@@ -207,9 +211,15 @@
                 /*padding-left: 0;*/
             }
                 .filter__handler .location {
-                    /*padding-left: 16px;*/
+                    padding-left: 24px;
                     /*text-align: left;*/
                     /*color: #FFFFFF;*/
+                }
+
+                @media (max-width: 370px) {
+                    .filter__handler .location {
+                        padding-left: 15px;
+                    }
                 }
 
                 .filter__handler .location__address {

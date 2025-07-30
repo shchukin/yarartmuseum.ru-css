@@ -2,13 +2,13 @@
     position: relative;
     padding-left: 28px;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 22px;
     color: #404040;
 }
     .informer__icon {
         position: absolute;
         left: 0;
-        top: -1px;
+        top: 1px;
         fill: currentColor;
     }
 

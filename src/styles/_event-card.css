@@ -143,6 +143,11 @@
                 .event-card__location {
                     margin-left: -20px;
                 }
+                    .event-card__location .location {
+                        padding-left: 20px;
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
 
                 .event-card__action {
 
