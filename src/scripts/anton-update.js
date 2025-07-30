@@ -82,6 +82,24 @@
                     filter.classList.remove('filter--expanded');
                 });
             });
+
+
+            // Закрытие дропдауна при клике вне фильтра в десктопном режиме
+            document.addEventListener('click', (event) => {
+                if (isDesktop && filter.classList.contains('filter--expanded') && !filter.contains(event.target)) {
+                    filter.classList.remove('filter--expanded');
+                }
+            });
+
+            // Закрытие дропдауна при нажатии клавиши Esc
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && filter.classList.contains('filter--expanded')) {
+                    filter.classList.remove('filter--expanded');
+                }
+            });
+
         });
+
+
     });
 })(jQuery);
